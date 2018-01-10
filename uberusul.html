@@ -12,48 +12,44 @@ body {
 .center {
   text-align: center;
 }
-#bg {
-  background: url("http://i82.photobucket.com/albums/j279/qazfan/Background-2.png") no-repeat;
+.bg {
+  background: url("http://i82.photobucket.com/albums/j279/qazfan/Background-2.png") no-repeat #104045;;
+  background: url("https://raw.githubusercontent.com/qazfan/effri/master/assets/background.png") no-repeat #104045;;
+  z-index:1;
+  left:0px;
+  width: 710px;
+  height: 610px;
 }
-#apDiv1 {
-  width: 305px;
+#splash {
+  background: url("http://i82.photobucket.com/albums/j279/qazfan/Splash.png") no-repeat;
+  width: 635px;
   height: 555px;
+  left: 0px;
+  top: 0px;
   z-index: 2;
 }
-#apDiv2 {
+#section--uber-usul, #section--effri, #section--adoptables {
   width: 551px;
   height: 528px;
-  z-index: 6;
-  text-align: left;
-}
-#apDiv3 {
-  width: 551px;
-  height: 534px;
-  z-index: 7;
-  text-align: left;
-}
-#apDiv4 {
-  width: 565px;
-  height: 535px;
-  z-index: 8;
-  text-align: center;
-}
-#apDiv5 {
-  z-index: 9;
-  text-align: center;
-}
-#apDiv6 {
-  width: 558px;
-  height: 527px;
   z-index: 10;
   text-align: left;
 }
-#apDiv8 {
+#section--art-gallery {
+  width: 551px;
+  height: 528px;
+  z-index: 10;
+  text-align: center;
+}
+#section--action-figures {
+  z-index: 9;
+  text-align: center;
+}
+#section--gallery {
   width: 141px;
   height: 33px;
   z-index: 13;
 }
-#pic2 {
+.gallery-image {
   width: 570px;
   height: 538px;
   z-index: 14;
@@ -92,19 +88,9 @@ a {
 #home-link--adoptables {left:109px;top:513px;width:243px;height:31px;z-index:20}
 #home-link--links {left:385px;top:509px;width:247px;height:40px;z-index:21}
 #home-link--apDiv17 {left:1016px;top:20px;width:68px;height:29980px;z-index:22}
-#section--links {left: 89px;top: 16041px;width: 561px;height: 530px;z-index: 23;text-align: center}
+#section--links {left:89px;top:16041px;width:561px;height:530px;z-index:23;text-align:center}
 
-#apDiv20 {
-  left: 56px;
-  top: 622px;
-  width: 629px;
-  height: 100px;
-  z-index: 24;
-  text-align: center;
-}
-#quilt {
-  margin-top:50px;
-}
+#quilt { margin-top:50px; }
 #quilt a {
   font-size:0px;
   vertical-align: top;
@@ -132,37 +118,36 @@ a {
 }
 </style>
 
-<div id="home-link--uber-usul" style="position: absolute; top: 65px; left: 109px;"><a href="#uberusul"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="523" height="116" border="0"></a></div>
-<div id="home-link--effri" style="position: absolute; top: 214px; left: 109px;"><a href="#effri"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="523" height="60" border="0"></a></div>
-<div id="home-link--story" style="position: absolute; top: 306px; left: 111px;"><a href="#story1"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="523" height="60" border="0"></a></div>
-<div id="home-link--art" style="position: absolute; top: 399px; left: 111px;"><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="240" height="80" border="0"></a></div>
-<div id="home-link--action-figures" style="position: absolute; top: 397px; left: 387px;"><a href="#actionfigures"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="240" height="80" border="0"></a></div>
-<div id="home-link--adoptables" style="position: absolute; top: 513px; left: 109px;"><a href="#adoptables"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="240" height="36" border="0"></a></div>
-<div id="home-link--links" style="position: absolute; top: 509px; left: 384px;"><a href="#links"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="240" height="36" border="0"></a></div>
+<div id="splash" style="position: absolute;">
+  <div id="home-link--uber-usul" style="position: absolute; top: 65px; left: 109px;"><a href="#uberusul"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="523" height="116" border="0"></a></div>
+  <div id="home-link--effri" style="position: absolute; top: 214px; left: 109px;"><a href="#effri"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="523" height="60" border="0"></a></div>
+  <div id="home-link--story" style="position: absolute; top: 306px; left: 111px;"><a href="#story1"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="523" height="60" border="0"></a></div>
+  <div id="home-link--art" style="position: absolute; top: 399px; left: 111px;"><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="240" height="80" border="0"></a></div>
+  <div id="home-link--action-figures" style="position: absolute; top: 397px; left: 387px;"><a href="#actionfigures"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="240" height="80" border="0"></a></div>
+  <div id="home-link--adoptables" style="position: absolute; top: 513px; left: 109px;"><a href="#adoptables"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="240" height="36" border="0"></a></div>
+  <div id="home-link--links" style="position: absolute; top: 509px; left: 384px;"><a href="#links"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" width="240" height="36" border="0"></a></div>
+</div>
 <div id="section--links" style="position: absolute; top: 16041px; left: 89px;">
   <div id="quilt">
     <div>
-      <a href="http://www.neopets.com/~Iambic"><img src="http://img.photobucket.com/albums/v135/_undead_whisper_/neopets/Iambic/linkback2.jpg"></a>
       <a href="http://www.neopets.com/~Marristia"><img src="http://i32.photobucket.com/albums/d15/marristia/lookup/m_button.gif"></a>
       <a href="http://www.neopets.com/~Quantum_Surge"><img src="http://i917.photobucket.com/albums/ad12/charybdisscylla/surge.png"></a>
       <a href="http://www.neopets.com/~Spaziful"><img src="http://i82.photobucket.com/albums/j279/qazfan/Spazlink.gif"></a>
-      <a href="http://www.neopets.com/~Thomason"><img src="http://i82.photobucket.com/albums/j256/angeloforiginalness/ThomasonPatch-1.png"></a>
+      <a href="http://www.neopets.com/~Thomason"><img src="https://raw.githubusercontent.com/qazfan/effri/master/assets/link_thomason.png"></a>
       <a href="http://www.neopets.com/~Cal_"><img src="http://i37.photobucket.com/albums/e87/neesboy/CalLink2.gif"></a>
       <a href="http://www.neopets.com/~Ofalia"><img src="http://i72.photobucket.com/albums/i180/britta90/bannerofalia2.gif"></a>
     </div>
     <div>
-      <a href="http://www.neopets.com/~Veyle"><img src="http://i247.photobucket.com/albums/gg127/dehoot/veyles-link-v-2.gif" alt="lzer!"></a>
+      <a href="http://www.neopets.com/~Veyle"><img src="https://raw.githubusercontent.com/qazfan/effri/master/assets/link_veyles.gif" alt="lzer!"></a>
       <a href="http://www.neopets.com/~Chaucca"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png"></a>
       <a href="http://www.neopets.com/~Kkampos"><img src="http://i82.photobucket.com/albums/j279/qazfan/MutantDraikLink2.gif"></a>
       <a href="http://www.neopets.com/~Uleesia"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png"></a>
-      <a href="http://www.neopets.com/~Kievoir"><img src="http://i283.photobucket.com/albums/kk297/hiei_sakuya/link-kiev2.gif"></a>
-      <a href="http://www.neopets.com/~Feldinn"><img src="http://i3.photobucket.com/albums/y87/xinavite/koavatarani.gif"></a>
+      <a href="http://www.neopets.com/~Feldinn"><img src="https://raw.githubusercontent.com/qazfan/effri/master/assets/link_feldinn.gif"></a>
       <a href="http://www.neopets.com/~Iuvena"><img src="http://i82.photobucket.com/albums/j279/qazfan/IuvenaLink.gif"></a>
     </div>
     <div>
       <a href="http://www.neopets.com/~Kulaine"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png"></a>
-      <a href="http://www.neopets.com/~Mr_Freeze"><img src="http://i3.photobucket.com/albums/y84/qbark/freezeicon.gif"></a>
-      <a href="http://www.neopets.com/~Riddleu"><img src="http://i3.photobucket.com/albums/y84/qbark/riddleicon5050.png"></a>
+      <a href="http://www.neopets.com/~Riddleu"><img src="https://raw.githubusercontent.com/qazfan/effri/master/assets/link_riddleu.png"></a>
       <a href="http://www.neopets.com/~Whomever"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png"></a>
       <a href="http://www.neopets.com/~brushwork"><img src="http://i82.photobucket.com/albums/j279/qazfan/BrushworkLink.gif"></a>
       <a href="http://www.neopets.com/~Hibernus"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" title="The Winter Mage"></a>
@@ -173,318 +158,191 @@ a {
   <p> </p>
   <p><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UberUsul50x50v2.gif" border="0"></p>
   <p><textarea style="height: 30px; width: 50px;"><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UberUsul50x50v2.gif" border="0"></a></textarea></p>
-  <p>  </p>
-  <p></p>
 </div>
-<div id="pic2" style="position: absolute; left: 84px; top: 18036px;">
+<div class="gallery-image" style="position: absolute; left: 84px; top: 18036px;">
   <br><br><br><p><img src="http://i82.photobucket.com/albums/j279/qazfan/1.png" border="0"></p>
   By <a href="http://www.neopets.com/userlookup.phtml?user=Qazfan">Me</a>
   <p></p>
 </div>
-<div id="pic2" style="position: absolute; left: 84px; top: 20036px;">
+<div class="gallery-image" style="position: absolute; left: 84px; top: 20036px;">
   <img src="http://i82.photobucket.com/albums/j279/qazfan/EffriHead.jpg" width="372" height="479" border="0"><br>
   By <a href="http://www.neopets.com/userlookup.phtml?user=Qazfan">Me</a>
 </div>
-<div id="pic2" style="position: absolute; left: 84px; top: 22036px;">
+<div class="gallery-image" style="position: absolute; left: 84px; top: 22036px;">
   <img src="http://i82.photobucket.com/albums/j279/qazfan/Effriversion4.jpg" width="234" height="468" border="0"><br>
   By <a href="http://www.neopets.com/userlookup.phtml?user=Qazfan">Me</a>
 </div>
-<div id="pic2" style="position: absolute; left: 84px; top: 24036px;">
+<div class="gallery-image" style="position: absolute; left: 84px; top: 24036px;">
   <img src="http://i82.photobucket.com/albums/j279/qazfan/eff.gif" width="319" height="482" border="0"><br>
   By <a href="http://www.neopets.com/userlookup.phtml?user=SHINDOUKAKU">Shindoukaku</a>
 </div>
-<div id="pic2" style="position: absolute; left: 84px; top: 26036px;">
+<div class="gallery-image" style="position: absolute; left: 84px; top: 26036px;">
   <p><br><br><br><img src="http://i82.photobucket.com/albums/j279/qazfan/ClayUsul.jpg" width="481" height="400" border="0"></p>
   <p>By <a href="http://www.neopets.com/userlookup.phtml?user=Sutanie">Sutanie</a></p>
 </div>
-<div id="pic2" style="position: absolute; left: 84px; top: 28036px;">
+<div class="gallery-image" style="position: absolute; left: 84px; top: 28036px;">
   <br><br><br><img src="http://i82.photobucket.com/albums/j279/qazfan/ByVhox.png" border="0"><br>
   By <a href="http://www.neopets.com/userlookup.phtml?user=Vhox">Vhox</a>
 </div>
-<div id="pic2" style="position: absolute; left: 84px; top: 30036px;">
-  <br><br><br><a href="http://www.neopets.com/~Quantum_Surge"><img src="http://i82.photobucket.com/albums/j279/qazfan/uberusulbycharybdis7.png" width="337" height="470" border="0"></a><br>
+<div class="gallery-image" style="position: absolute; left: 84px; top: 30036px;">
+  <br><a href="http://www.neopets.com/~Quantum_Surge"><img src="http://i82.photobucket.com/albums/j279/qazfan/uberusulbycharybdis7.png" width="337" height="470" border="0"></a><br>
   By <a href="http://www.neopets.com/~Quantum_Surge">Charybdis7</a>
 </div>
-<div id="pic2" style="position: absolute; left: 84px; top: 32036px;">
+<div class="gallery-image" style="position: absolute; left: 84px; top: 32036px;margin-bottom:10000px">
   <a href="http://www.neopets.com/userlookup.phtml?user=chaos_lavawolf"><img src="http://i82.photobucket.com/albums/j279/qazfan/EffriByChaos_Lavawolf.jpg" width="343" height="506" border="0"></a><br>
   By <a href="http://www.neopets.com/userlookup.phtml?user=chaos_lavawolf">Fiona</a>
 </div>
-<div id="apDiv1" style="position: absolute; left: 0px; top: 0;"><img src="http://i82.photobucket.com/albums/j279/qazfan/Splash.png" width="635" height="555" border="0"></div>
-<div id="apDiv8" style="position: absolute; left: 228px; top: 10073px;">
-  <table border="0" cellspacing="11">
-    <tr>
-      <td><a href="#p1"><img src="http://i82.photobucket.com/albums/j279/qazfan/1.png" height="50" width="50" border="1"></a></td>
-      <td><a href="#p2"><img src="http://i82.photobucket.com/albums/j279/qazfan/EffriHead.jpg" height="50" width="50" border="1"></a></td>
-      <td><a href="#p3"><img src="http://i82.photobucket.com/albums/j279/qazfan/Effriversion4.jpg" height="50" width="50" border="1"></a></td>
-      <td><a href="#p4"><img src="http://i82.photobucket.com/albums/j279/qazfan/eff.gif" height="50" width="50" border="1"></a></td>
-    </tr>
-    <tr>
-      <td><a href="#p5"><img src="http://i82.photobucket.com/albums/j279/qazfan/ClayUsul.jpg" height="50" width="50" border="1"></a></td>
-      <td><a href="#p6"><img src="http://i82.photobucket.com/albums/j279/qazfan/ByVhox.png" height="50" width="50" border="1"></a></td>
-      <td><a href="#p7"><img src="http://i82.photobucket.com/albums/j279/qazfan/uberusulbycharybdis7.png" height="50" width="50" border="1"></a></td>
-      <td><a href="#p8"><img src="http://i82.photobucket.com/albums/j279/qazfan/EffriByChaos_Lavawolf.jpg" height="50" width="50" border="1"></a></td>
-    </tr>
-  </table>
-</div>
-<div id="bg" style="position: absolute; top: 0px; left: 0px; width: 710px; height: 610px; z-index: 1; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png'); border: 1px none #000000;"><a name="home">&nbsp;</a></div>
-<div id="bg" style="position: absolute; top: 2000px; left: 0px; width: 710px; height: 610px; z-index: 1; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat;"><a name="uberusul">&nbsp;</a></div>
-<div style="position: absolute; top: 4000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;"><a name="effri">&nbsp;</a></div>
-<div id="bg" style="position: absolute; top: 6000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;"><a name="story1">&nbsp;</a></div>
-<div id="bg" style="position: absolute; top: 8000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;"><a name="story2">&nbsp;</a></div>
-<div id="bg" style="position: absolute; top: 10000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;"><a name="art">&nbsp;</a></div>
-<div id="bg" style="position: absolute; top: 12000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;"><a name="actionfigures">&nbsp;</a></div>
-<div id="bg" style="position: absolute; top: 14000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;"><a name="adoptables">&nbsp;</a></div>
-<div id="bg" style="position: absolute; top: 16000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;"><a name="links">&nbsp;</a></div>
-<div id="bg" style="position: absolute; top: 18000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;">
-  <a name="p1"></a><a name="p1">.</a>
-</div>
-<div id="bg" style="position: absolute; top: 20000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;">
-  <a name="p2"></a><a name="p2">.</a>
-</div>
-<div id="bg" style="position: absolute; top: 22000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;">
-  <a name="p3"></a><a name="p3">.</a>
-</div>
-<div id="bg" style="position: absolute; top: 24000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;">
-  <a name="p4"></a><a name="p4">.</a>
-</div>
-<div id="bg" style="position: absolute; top: 26000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;">
-  <a name="p5"></a><a name="p5">.</a>
-</div>
-<div id="bg" style="position: absolute; top: 28000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;">
-  <a name="p6"></a><a name="p6">.</a>
-</div>
-<div id="bg" style="position: absolute; top: 30000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;">
-  <a name="p7"></a><a name="p7">.</a>
-</div>
-<div id="bg" style="position: absolute; top: 32000px; left: 0px; background: url('http://i82.photobucket.com/albums/j279/qazfan/Background-2.png') no-repeat; width: 710px; height: 610px; z-index: 1;">
-  <a name="p8"></a><a name="p8">.</a>
-</div>
+<div class="bg" style="position: absolute; top: 0px;"><a name="home">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 2000px;"><a name="uberusul">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 4000px;"><a name="effri">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 6000px;"><a name="story1">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 8000px;"><a name="story2">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 10000px;"><a name="art">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 12000px;"><a name="actionfigures">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 14000px;"><a name="adoptables">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 16000px;"><a name="links">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 18000px;"><a name="p1">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 20000px;"><a name="p2">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 22000px;"><a name="p3">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 24000px;"><a name="p4">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 26000px;"><a name="p5">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 28000px;"><a name="p6">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 30000px;"><a name="p7">&nbsp;</a></div>
+<div class="bg" style="position: absolute; top: 32000px;"><a name="p8">&nbsp;</a></div>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 25px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#uberusul"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#uberusul"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 2025px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#effri"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#effri"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 4025px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#uberusul"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#story1"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#uberusul"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#story1"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 6025px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#effri"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#story2"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#effri"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#story2"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 8025px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#story1"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#story1"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 10025px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#story2"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#actionfigures"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#story2"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#actionfigures"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 12025px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#adoptables"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#adoptables"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 14025px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#actionfigures"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#links"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#actionfigures"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#links"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 16025px; left: 26px; z-index: 5;">
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="32">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="73"><a href="#adoptables"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
-  <tr>
-    <td height="31">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td>
-  </tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr>
+  <tr><td height="73"><a href="#adoptables"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#home"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 18025px; left: 26px; z-index: 5;">
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
-  <tr><td height="32">&nbsp;</td></tr>
-  <tr><td height="73"><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
-  <tr><td height="31">&nbsp;</td></tr>
-  <tr><td><a href="#p2"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
+  <tr><td height="32">&nbsp;</td></tr><tr><td height="73"><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr><tr><td height="31">&nbsp;</td></tr>
+  <tr><td><a href="#p2"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 20025px; left: 26px; z-index: 5;">
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="32">&nbsp;</td></tr>
-  <tr><td height="73"><a href="#p1"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td height="73"><a href="#p1"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="31">&nbsp;</td></tr>
-  <tr><td><a href="#p3"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#p3"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 22025px; left: 26px; z-index: 5;">
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="32">&nbsp;</td></tr>
-  <tr><td height="73"><a href="#p2"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td height="73"><a href="#p2"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="31">&nbsp;</td></tr>
-  <tr><td><a href="#p4"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#p4"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 24025px; left: 26px; z-index: 5;">
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="32">&nbsp;</td></tr>
-  <tr><td height="73"><a href="#p3"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td height="73"><a href="#p3"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="31">&nbsp;</td></tr>
-  <tr><td><a href="#p5"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#p5"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 26025px; left: 26px; z-index: 5;">
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="32">&nbsp;</td></tr>
-  <tr><td height="73"><a href="#p4"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td height="73"><a href="#p4"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="31">&nbsp;</td></tr>
-  <tr><td><a href="#p6"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#p6"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 28025px; left: 26px; z-index: 5;">
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="32">&nbsp;</td></tr>
-  <tr><td height="73"><a href="#p5"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td height="73"><a href="#p5"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="31">&nbsp;</td></tr>
-  <tr><td><a href="#p7"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#p7"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 30025px; left: 26px; z-index: 5;">
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="32">&nbsp;</td></tr>
-  <tr><td height="73"><a href="#p6"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td height="73"><a href="#p6"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="31">&nbsp;</td></tr>
-  <tr><td><a href="#p8"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#p8"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
 <table width="30" border="0" cellpadding="0" cellspacing="0" style="position: absolute; top: 32025px; left: 26px; z-index: 5;">
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="32">&nbsp;</td></tr>
-  <tr><td height="73"><a href="#p7"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td height="73"><a href="#p7"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
   <tr><td height="31">&nbsp;</td></tr>
-  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0"></a></td></tr>
+  <tr><td><a href="#art"><img src="http://i82.photobucket.com/albums/j279/qazfan/tabs.png" border="0" width=35 height=117></a></td></tr>
 </table>
-<div id="apDiv2" style="position: absolute; left: 95px; top: 2043px;">
-  <img src="http://images.neopets.com/nt/ntimages/323_snowager_lair.gif" border="2"><p>Uber Usul
-  </p>
-  <p>It's a bird! It's a plane! No, wait, it <em>is </em> a bird! Wow!  </p>
-  <p>Name: Uber Usul <br>
+<div id="section--uber-usul" style="position: absolute; left: 95px; top: 2043px;">
+  <img src="http://images.neopets.com/nt/ntimages/323_snowager_lair.gif" border="2">
+  <p>Uber Usul</p>
+  <p>It's a bird! It's a plane! No, wait, it <em>is</em> a bird! Wow!</p>
+  <p>
+    Name: Uber Usul<br>
     Alias: Effri<br>
     Job: Works as super hero for Defenders of Neopia<br>
-    Secret Lair: Terror Mountain
-
-    <br>
+    Secret Lair: Terror Mountain<br>
     Color: Ice<br>
     Talents: Making/controlling ice from thin air or freezing water<br>
     Hobbies: Fighting crime<br>
     Collections: Imprisoned villains<br>
-  Honors and Awards: The Key to Neopia Central, Defenders of Neopia Ace Hero, Crime Magazine's Hero of the Year, Legendary Award, Usul of the Year,   Pitcher Award for Courage, etc., etc.</p>
+    Honors and Awards: The Key to Neopia Central, Defenders of Neopia Ace Hero, Crime Magazine's Hero of the Year, Legendary Award, Usul of the Year, Pitcher Award for Courage, etc., etc.
+  </p>
 </div>
-<div id="apDiv3" style="position: absolute; left: 95px; top: 4043px;">
+<div id="section--effri" style="position: absolute; left: 95px; top: 4043px;">
   Effri
   <p>Behind every successful woman is a substantial amount of coffee.<br>
   -Stephanie Piro</p>
@@ -498,18 +356,16 @@ a {
     Collections: Uber Usul comic books and memorbilia<br>
     Honors and Awards: UsukiCon's Uber Usul Look Alike- Gold (x3), Beauty Contest- Silver (x2),  Beauty Contest- Bronze, Least Paid Employee of the Month (x17)<br>
     Golden Cupcake Award<br><a href="http://www.neopets.com/~Aalabaster#golden"><img src="http://i574.photobucket.com/albums/ss182/lumnatii/goldencupcake.png" border="0"></a><br>
-  Suspicious Behavior: Often leaves work for several hours at a time and makes up for it later in the day, exercises extensively in any weather for no apparent reason, attends UsukiCon each year.</p>
-  <p>
+    Suspicious Behavior: Often leaves work for several hours at a time and makes up for it later in the day, exercises extensively in any weather for no apparent reason, attends UsukiCon each year.
   </p>
 </div>
 <div style="position: absolute; top: 6038px; left: 90px; width: 560px; height: 530px; overflow: auto; color: #000000; z-index: 2;">
-  <table border="0" cellpadding="5" cellspacing="0" width="545" height="530"><tr>
-    <td valign="top">
-      <p><strong>Of Heroes, Heroics, and Other Such Things</strong><br>
+  <table border="0" cellpadding="5" cellspacing="0" width="545" height="530">
+    <tr>
+      <td valign="top">
+        <strong>Of Heroes, Heroics, and Other Such Things</strong><br>
         By <a href="http://www.neopets.com/userlookup.phtml?user=neesboy">Neesboy</a> for the <a href="http://www.neopets.com/ntimes/index.phtml?section=362852">Neopian Times</a><br>
         Coauthored by <a href="http://www.neopets.com/userlookup.phtml?user=qazfan">Me</a></p>
-
-
         <p>     Effri sat idly twirling the pale hair of her ponytail and staring fixedly at the three in her Roodoku puzzle. It couldn't be there, she'd decided about five minutes ago. However, it was there, and there was no altering it. The silver Usul was beginning to wonder if it was even possible.</p>
         <p>     She was seated in the Coffee Shoppe, behind the counter filled with various coffee makers, espresso machines, and chipped mugs. Seated throughout the rest of the shop were a few regulars. The Neopian Times newsboy Chia was sitting in a corner, taking the time to read over his own wares, and two other tables were occupied by a pair of poets staring off into the distance. It was a fairly slow day, as not many Neopians bothered to visit the Catacombs, apart from a few artistic types and the occasional coin collector. Of course, there was almost always at least one poet in the shop, but they didn't really count. They invariably ordered the cheapest coffee they could, and took up space for several hours on end. Still, it paid her salary.</p>
         <p>     Effri sighed, setting her pencil down. It was hopeless. She wasn't likely to become King Roo's accountant even if the job was offered. As she looked up, however, an article in the Chia's Times caught her attention. &quot;Hey, you got a spare copy of that?&quot; she asked. &quot;I'll give you a Phear Coffee for one.</p>
@@ -570,146 +426,167 @@ a {
         <p>&quot;Almost nothing? What on Neopia do you mean?&quot;</p>
         <p>&quot;No. Nothing almost,&quot; Über Usul said, and smiled.</p>
         <p><strong>The End</strong></p>
-        <p>Read the <a href="#story2">sequel.</a>
-          <br></p>
-        </td>
-      </tr></table>
-    </div>
-    <div style="position: absolute; top: 8038px; left: 90px; width: 560px; height: 530px; overflow: auto; color: #000000; z-index: 2;">
-      <table border="0" cellpadding="5" cellspacing="0" width="545" height="530"><tr>
-        <td valign="top">
-          <strong>Lights, Camera, Auction!</strong><br>By <a href="http://www.neopets.com/userlookup.phtml?user=neesboy">Neesboy</a> for the <a href="http://www.neopets.com/ntimes/index.phtml?section=412278">Neopian Times</a><br>Coauthored by <a href="http://www.neopets.com/userlookup.phtml?user=qazfan">Me</a>
-          <p>&quot;... And now a word from our sponsors,&quot; a voice announced as a yellow navibot popped up from under a screen encouraging the masses to stay tuned.</p>
-          <p>     A camera panned around a snow covered mountain peak glistening in the cool sunlight before zooming in on a small cottage on the slope. At its door stood a silver Usul dressed in light blue. A large snowflake emblem was spread across her shirt, and a white oddly shaped mask concealed most of her face. &quot;For those of you who don't know, I'm Über Usul, and I'm speaking on behalf of Terror Mountain Realty. From the gentle slopes of Happy Valley to the peaks of Terror Mountain and the silent majesty of the Ice Caves, Terror Mountain has something to offer everybody. With two resident faeries, historical sites from the adventures of Hannah, and a variety of entertainment venues, shouldn't you consider a change of pace?&quot;</p>
-          <p>     Click.</p>
-          <p>     The Neovision set gave one last flicker before turning off. Watching it was Effri, likewise a silver Usul, but dressed in more ordinary, albeit purple, apparel. &quot;Desperate times when superheroes have to do NV ads,&quot; she muttered, before glancing at the time and sighing. Off to work. As much as she would have loved to stay home, if she lost the job it would mean eating nothing but leftovers until she could find somewhere else that would hire her, what with her infrequent and seemingly random working hours. And since even work was preferable to eating omelette twenty-one times a week, work it was.</p>
-          <p>     Grabbing her messenger bag, she headed out the door and into the lamplight. Down beneath Neopia Central, the catacombs were lit by a variety of torches, lanterns, and the occasional Meepit lamp with an extension cord, depending on what people put out to illuminate their home or shop. After some time, she arrived at the Coffee Shoppe, which was located at the rough hub of the catacomb's activity. Not caring to waste any time, she hurried in, hoping to arrive unnoticed.</p>
-          <p>     No such luck. &quot;You're early,&quot; came a shrill accusation as she stepped into the shop. It had been issued by a short yellow Shoyru with a false smile that was habitually plastered on her face &quot;to make the customers feel welcome.&quot; Effri had always suspected it was more likely to make them feel a tad queasy.</p>
-          <p>&quot;Yes, Ms. Arca. I didn't want to be late,&quot; she replied, summoning all her resolution to not do something that would get her fired. Even though it would be so much fun... &quot;Would you like me to stand outside next time?</p>
-          <p>     Ms. Arca, the shop's proprietor, sniffed indignantly. &quot;People might think you were loitering. That would detract from the establishment's reputation, and result in a drop in sales. Just don't expect to be paid overtime.</p>
-          <p>     Sheesh. Such a big deal over three minutes. Most people would be happy to have a motivated- well, sort of- employee who arrived early. Her job was not in any great peril, however, as Ms. Arca could hardly run the place herself. She hated coffee. It figured, really. She simply failed to see all the other lines of work that suited her personality so much better. Hubrid Nox's personal secretary, for instance. &quot;Well, I would hate to keep you any longer. I'm sure you have something important to get out to,&quot; Effri said, tactfully doing her best to get her boss out.</p>
-          <p>     The Shoyru nodded, somewhat smugly as if to imply Effri was not the sort to have important things to get out to herself. If only she knew, Effri mused. As the door closed, she was left to the company of the poets, the most common and cheapest of the Shoppe's clientele. One cheap cuppa jo, and they stared out into space for a few hours.</p>
-          <p>     During the aforementioned space of a few hours, Effri had polished the various coffee making implements, employed them in making coffee, cleaned the counters, stared at the clock for a c<span>u</span>mulative total of thirty-seven minutes, gone so far as to consider taking up knitting, and mentally started work on a hypothetical best selling novel. Despite keeping her from relying on omelettes for sustenance, a slow day at a coffee shop was like none other.</p>
-          <p>     Normally, there were a number of customers circulating through. But today, even the poets eventually got up and left. So Effri was reduced to staring at the coffee maker, hoping the lights on it would blink. Which, at long last, they did. Blink, pause, blink, blink, blink, pause... &quot;About time,&quot; she muttered, making a note on her time sheet, and hurrying out the door.</p>
-          <p>     The Usul adroitly navigated the crowds, not feeling too guilty if she bumped into anybody. After all, they hadn't stopped in for some coffee. The number of people dwindled away as she continued, taking a number of winding turns and eventually reaching a dead end, with lichen growing across the rock. She pulled away the screen of fake moss, and ducked inside. Several minutes later, she emerged, now outfitted in the blue and white outfit of Über Usul, ice crystals laced throughout her fur.</p>
-          <p>&quot;There's irony for you. By night, I fight evil. By day, I work at its coffee shop.&quot; And so saying, Über Usul set out to vanquish crime.</p>
-          <p align="-blocked-">     Shortly thereafter...</p>
-          <p>&quot;Setting out... to vanquish... crime,&quot; she managed to say as she hauled one hand over another, scaling the sheer rock face, &quot;would be a lot... nicer if setting out... were easier.&quot; The Defenders of Neopia was very careful about who had access to their high-security lower levels. Consequently, she was forced to climb a large subterranean cliff just to get to work. The fact that her uncanny ability allowed her to form hand holds out of ice only helped alleviate her annoyance a little.</p>
-          <p>     Of course, there were positive aspects to the work. It was good exercise. Unpleasant things happened to heroes who started relying too much on their ability to defy physics and didn't keep in shape. Throwing fireb<span>a</span>lls was all fine and dandy until it started to rain. Then a good solid punch from the villain at large was all it took to settle the matter.</p>
-          <p>     With a final surge of, if not energy, lower levels of entropy, the cryogenic crusader managed to pull onto a ledge on which a small, inconspicuous door the same color as the surrounding rock was all that indicated the bastion of justice concealed behind. Well, that, and a recently repainted warning in bright red letters, &quot;Do not enter, superheroes and janitorial staff only.&quot;</p>
-          <p>     Rolling her eyes, she stepped through. &quot;Most advanced technology outside of Virtupets is in this place, and they can't manage a simple elevator. Naturally.&quot; The corridors were a spotless white, with the notable exception of the scorch marks the janitors had not gotten too yet, so it was by memory that she reached the control room, which housed the massive quantities of buttons, dials, and screens needed to keep the DoN headquarters running smoothly.</p>
-          <p>Getting better at the climb, I see. You're earlier than I expected.&quot; The voice emanated from a large comfortable chair, which swiveled around to reveal Lightning Lenny slumped in it.</p>
-          <p>&quot;Oh not you too,&quot; Über Usul groaned. It seemed everybody was out to get her for arriving sooner than absolutely necessary.</p>
-          <p>&quot;What, what'd I say? And I saw your ad. Isn't that a tad beneath you?&quot; the Lenny asked curiously.</p>
-          <p>&quot;Never mind. Nothing. I had to do the ad. How else am I supposed to afford any sort of secret lair? Slinging coffee doesn't exactly bring in that kind of money. Anyways, what's the scoop?&quot;</p>
-          <p>&quot;Triple, mint with fudge, if it isn't too much trouble.&quot; Effri glared at him. &quot;Oh, I forgot. No ice cream jokes.&quot;</p>
-          <p>&quot;Sure, you forgot. And I'm going to move somewhere nice and warm like the Lost Desert when I retire. Anyways, you're the one always berating me for being slow about things. So?&quot;</p>
-          <p>&quot;Oh, all right. Somebody's causing quite a ruckus over at the Auction House. Noisy fellow.&quot;</p>
-          <p>&quot;And the Chia Cops aren't handling this because...?&quot;</p>
-          <p>&quot;Quite frankly, their fluffy earmuffs aren't cutting it. They've been doing the best, to be sure, but the situation's only barely been contained thus far. The genie's locked himself up in his lamp, what with all the commotion. We're holding you over until they...&quot;</p>
-          <p>     Lightning Lenny was interrupted as a transmission came in over one of the speakers. It was hazy, and the words 'send in back up' were barely distinguishable over a loud, off-key wailing noise.</p>
-          <p>&quot;... request backup,&quot; he finished lamely as the transmission cut out. &quot;You're in. And for a bit of advice, it would seem that keeping your ears plugged wouldn't go amiss.&quot;</p>
-          <p align="-blocked-">     At the scene of the crime...</p>
-          <p>     The Chia Cops had been forced to move out, following the civilians in retreat. Outside, they kept the curious as well as reporters from both Neovision and Neopian Times from entering. As Über Usul walked down the brightly lit halls, only the lack of people and occasionally a gap where an item that had racked up a considerable bid had been indicated that anything was amiss. Every minute or two, a loud, sourceless thud would echo through, a warning shot across the bows. &quot;Come out, come out, wherever you are,&quot; she called back. Who on Neopia could empty the entire Auction House just like that? Even now, they would be strolling through, taking their pick of priceless items.&quot;</p>
-          <p>     She hurried on, then stopped as she caught another sound between the resonating booms. Something scraping along the floor. Moving stealthily, she rounded the corner to see a grey Wocky. He had on a set of headphones emblazoned with the Virtupets brand logo, and wore a bandolier filled with spare batteries. His ears twitched in time to some beat she could not hear, but nevertheless, he still caught her quiet movements. He looked up, and smiled. &quot;Ah, I figured one of you would be in here soon enough. I'm flattered. No threat to anybody, apart from hearing, perhaps, and I have the Defenders after me over a few million neopoints.&quot;</p>
-          <p>     Ice began to form in Über Usul's hands. &quot;You know, you really do talk too much. I'm surprised you haven't bored me with the details of whatever preposterous name you've come up with for yourself.&quot;</p>
-          <p>     The Wocky smiled broadly. &quot;What can I say? I like noise. And if you must know, my name's Cisc. Didn't bother with a silly alter ego. I don't intend to go out in public dressed like it's a costume party.&quot; Here he gave a meaningful glance at her outfit. &quot;And as the Chia Cops would have little trouble looking me up on the police database, there isn't any point in pretending.&quot;</p>
-          <p>     The Usul blinked. This was a decided first. Most villains started by trying to k<span>i</span>ll her. &quot;I'm warning you...&quot;</p>
-          <p>&quot;Oh, do get on with it. I could tell you resistance is futile, but you'd never believe me,&quot; Cisc interrupted irritably. To make his point, he grabbed a dark nova, whirled, and flung it at her.</p>
-          <p>     Finally, familiar ground. She ducked easily, little troubled by the poor throw. In return, she flung a pair of her signature snow flake throwing stars, made up of razor sharp ice formed in her palms. &quot;That the best you've got?&quot; she challenged.</p>
-          <p>     Cisc didn't open his mouth. He simply started tapping his foot, as if counting off a beat. A high pitched whine at the edge of hearing filled the room for a second, emanating from the air itself, and the throwing stars exploded half way through their flight. &quot;Should have paid more attention in Neoschool. Ice, when vibrated at a resonant frequency, shatters. Music to my ears.&quot;</p>
-          <p>     That was decidedly unpleasant. Perhaps a more conventional approach. &quot;Well, I appreciate music myself. I'll see if I can't get you a few bars. Then you can whistle tunes with all the other jail birds.&quot; As she said this, she took a run towards him.</p>
-          <p>&quot;I'm not sure I appreciate your tone. Try this one,&quot; Cisc retorted, and before the hero managed more than a few steps, another noise reverberated through the room. This one was most definitely audible, loud enough that she was forced to her knees as her head rang in pain. The Wocky smiled, turning to glance over the contents of the nearest table. &quot;You care to believe me now? Nobody takes anybody's word these days. Pity, that. It'd save so much trouble.&quot; Despite the fact that his voice slid through the cacophony as if it wasn't there, Über Usul could hardly concentrate on it, the pressure of the noise was so great. Covering her ears did nothing to alleviate the matter. &quot;Just nod if you want it all to stop. You leave me alone, and worry about other villains out there. Oh, and don't even bother thinking about that trick you tried on Nihil. Even if you do set off the sprinklers, I can break out of anything you freeze me in in an instant.&quot;</p>
-          <p>     She couldn't help it. Her head was pounding, incapable of forming any thought at all, other than &quot;stop.&quot; She nodded.</p>
-          <p>     Instantly, the noise ceased. The Wocky grinned triumphantly. &quot;Try anything, and I don't go so easy on you.&quot; He gestured towards the door, watching her intently. It was a checkmate. She was forced to walk towards that door, knowing that her opponent would get away with millions of neopoints worth of items. The consciousness of this fact showed on her face, which seemed to amuse Cisc to no end.</p>
-          <p>     It kept showing, right up until she'd stepped through the door and to the side. She had to move fast. He'd been right. Sprinklers wouldn't work. But there was something else that would. There was a pillar that would work perfectly. She quickly ran over to it, scaling it smoothly with the aid of self-made handholds once again. &quot;I hate it when HQ is right about exercise,&quot; she muttered. Upon reaching the top, she pressed one palm against the ceiling, waiting. After about a minute, Cisc strolled in to look around and make sure she was gone before continuing to plunder the various goods.</p>
-          <p>     As soon as he was back in, Über Usul let the ice flow quickly from her hand. It crept along the ceiling, traveling down to the door frame and back up on the other side. Over there, it didn't simply grow outwards. It grew down, forming oversized icicles suspended precariously. She continued this for as long as she dared- it would be ruined if he moved on- before sliding down the pillar just far enough to peer through the still-open door. Perfect. He was directly under the trap. She slid down the rest of the way, and started towards the door while forming a thick shield of ice around her arm. The icicles could fall on anybody, after all.</p>
-          <p>     The villain looked up in time to catch her sneaking into the room. &quot;Quiet, or they fall,&quot; she warned, pointing upwards. &quot;You try to run away, and I shout. Bring them all down,&quot; she added, holding the shield above her head to show she'd fare a lot better. All the while, she continued forward.</p>
-          <p>&quot;Fine,&quot; Cisc spat back, still cautious enough to keep his voice down. &quot;Bravo. No loud noises. Very clever of you.&quot; There was no way he could shatter them all in the time it would take them to fall. &quot;But I've got a card up my sleeve yet,&quot; he said, and suddenly reached into the bag, hefting out a portable kiln. &quot;Fight ice with fire.</p>
-          <p>     For a second, Über Usul blanched. The portable kiln was second to no other weapon in terms of consistent attack with fire. The Wocky was twirling it, advancing towards her steadily. Only one thing for it... She charged at him, her thick ice shield held out in front. Cisc just smiled, leveling the kiln and letting out gouts of fire from it. &quot;As I said, you should've paid more attention in Neoschool. Even a first year knows fire melts...&quot; That was as far as he got before a solid punch from the blue clad champion knocked him unconscious.</p>
-          <p>&quot;That's what you get for not exercising. Honestly, villains can never take a decent punch when their power's down,&quot; she muttered, sighing and slumping to the floor in relief. &quot;And you're wrong,&quot; she addressed him coolly. &quot;I did pay attention. Water, and consequently ice, is a poor conductor of heat. It takes time to melt all the way through.&quot; Admittedly, it didn't hurt that kilns took quite a while to get started. You were supposed to prep it before a battle.</p>
-          <p align="-blocked-">     Afterwards...</p>
-          <p>     With Cisc locked away in a sound proof cell and the stolen goods restored to their proper owners, things gradually settled back to normal. At the Coffee Shoppe, Effri smiled, right in the middle of a stern lecture from Ms. Arca. Normal. As if.</p>
-          <p><strong>The End</strong></p>
-        </td>
-      </tr></table>
-    </div>
-    <div id="apDiv4" style="position: absolute; left: 85px; top: 10043px;">
-      <p>Art Gallery</p>
-      <br><br><br><br><br><br><br><br><br><br><br><p>Choose a link from above. Then use the arrow tabs to navigate or the home tab to return to this page.</p>
-    </div>
-    <div id="apDiv5" style="position: absolute; left: 129px; top: 12048px;">
-      <p>Action Figures</p>
-      <div align="center">
-        <table border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td height="90" width="139" style="background: url('http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulice.png');"><p><img src="http://cgi.boingdragon.com/count/Rikuphan/2.gif" height="90" width="139"></p></td>
-          </tr>
-        </table>
-      </div>
-      <p>
-        <a href="http://neopets.com/~Veruka_FyreFly"><img src="http://img.photobucket.com/albums/v47/teeramisu/MapAdopts/mapadoptterror.gif" border="0"></a><a href="http://petpages.neopets.com/~kushruneid">
-          <img src="http://i4.photobucket.com/albums/y105/kushruneid/iceblock.gif" border="0" alt="Keep--in-a--cool--place.----Do--NOT--lick-!"></a>
-          <a href="http://www.neopets.com/~Myrmaid"><img src="http://i18.photobucket.com/albums/b117/theroyalrat/iUsul.png" alt="adopt" border="0"></a>
-          <a href="http://www.neopets.com/~marristia"><img src="http://i32.photobucket.com/albums/d15/marristia/adopt/ice.gif" border="0"></a><a href="http://www.neopets.com/~uleesia"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/iceusul.png" border="0"></a></p>
-          <p align="center"><a href="http://www.neopets.com/~Elleanora"><img src="http://i82.photobucket.com/albums/j279/qazfan/Usuls/ice.png" border="0" height="117" width="75"></a><a href="http://www.neopets.com/~cal_#licence"><img src="http://i37.photobucket.com/albums/e87/neesboy/UberUsulLicence.png" alt="hero's licence" border="0"></a><a href="http://www.neopets.com/~Naralka"><img src="http://img.photobucket.com/albums/v645/disty/usulice.png" width="121" height="170" border="0"></a><a href="http://www.neopets.com/~Spaziful"><img src="http://i82.photobucket.com/albums/j279/qazfan/shoelaces/Shoelaces0018.png" border="0"></a></p>
-          <p align="center">
-          </p>
-        </div>
-        <div id="apDiv6" style="position: absolute; left: 94px; top: 14045px; overflow: auto;">
-          <p>Adopt an Usul! </p>
-          <p class="center"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulice.png" alt="By Qazfan" border="0"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsil.png" alt="By Qazfan" border="0"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPlu.png" alt="By Qazfan" border="0"></p>
+        <p>Read the <a href="#story2">sequel.</a></p>
+        <br>
+      </td>
+    </tr>
+  </table>
+</div>
+<div style="position: absolute; top: 8038px; left: 90px; width: 560px; height: 530px; overflow: auto; color: #000000; z-index: 2;">
+  <table border="0" cellpadding="5" cellspacing="0" width="545" height="530"><tr>
+    <td valign="top">
+      <strong>Lights, Camera, Auction!</strong><br>By <a href="http://www.neopets.com/userlookup.phtml?user=neesboy">Neesboy</a> for the <a href="http://www.neopets.com/ntimes/index.phtml?section=412278">Neopian Times</a><br>Coauthored by <a href="http://www.neopets.com/userlookup.phtml?user=qazfan">Me</a>
+      <p>&quot;... And now a word from our sponsors,&quot; a voice announced as a yellow navibot popped up from under a screen encouraging the masses to stay tuned.</p>
+      <p>     A camera panned around a snow covered mountain peak glistening in the cool sunlight before zooming in on a small cottage on the slope. At its door stood a silver Usul dressed in light blue. A large snowflake emblem was spread across her shirt, and a white oddly shaped mask concealed most of her face. &quot;For those of you who don't know, I'm Über Usul, and I'm speaking on behalf of Terror Mountain Realty. From the gentle slopes of Happy Valley to the peaks of Terror Mountain and the silent majesty of the Ice Caves, Terror Mountain has something to offer everybody. With two resident faeries, historical sites from the adventures of Hannah, and a variety of entertainment venues, shouldn't you consider a change of pace?&quot;</p>
+      <p>     Click.</p>
+      <p>     The Neovision set gave one last flicker before turning off. Watching it was Effri, likewise a silver Usul, but dressed in more ordinary, albeit purple, apparel. &quot;Desperate times when superheroes have to do NV ads,&quot; she muttered, before glancing at the time and sighing. Off to work. As much as she would have loved to stay home, if she lost the job it would mean eating nothing but leftovers until she could find somewhere else that would hire her, what with her infrequent and seemingly random working hours. And since even work was preferable to eating omelette twenty-one times a week, work it was.</p>
+      <p>     Grabbing her messenger bag, she headed out the door and into the lamplight. Down beneath Neopia Central, the catacombs were lit by a variety of torches, lanterns, and the occasional Meepit lamp with an extension cord, depending on what people put out to illuminate their home or shop. After some time, she arrived at the Coffee Shoppe, which was located at the rough hub of the catacomb's activity. Not caring to waste any time, she hurried in, hoping to arrive unnoticed.</p>
+      <p>     No such luck. &quot;You're early,&quot; came a shrill accusation as she stepped into the shop. It had been issued by a short yellow Shoyru with a false smile that was habitually plastered on her face &quot;to make the customers feel welcome.&quot; Effri had always suspected it was more likely to make them feel a tad queasy.</p>
+      <p>&quot;Yes, Ms. Arca. I didn't want to be late,&quot; she replied, summoning all her resolution to not do something that would get her fired. Even though it would be so much fun... &quot;Would you like me to stand outside next time?</p>
+      <p>     Ms. Arca, the shop's proprietor, sniffed indignantly. &quot;People might think you were loitering. That would detract from the establishment's reputation, and result in a drop in sales. Just don't expect to be paid overtime.</p>
+      <p>     Sheesh. Such a big deal over three minutes. Most people would be happy to have a motivated- well, sort of- employee who arrived early. Her job was not in any great peril, however, as Ms. Arca could hardly run the place herself. She hated coffee. It figured, really. She simply failed to see all the other lines of work that suited her personality so much better. Hubrid Nox's personal secretary, for instance. &quot;Well, I would hate to keep you any longer. I'm sure you have something important to get out to,&quot; Effri said, tactfully doing her best to get her boss out.</p>
+      <p>     The Shoyru nodded, somewhat smugly as if to imply Effri was not the sort to have important things to get out to herself. If only she knew, Effri mused. As the door closed, she was left to the company of the poets, the most common and cheapest of the Shoppe's clientele. One cheap cuppa jo, and they stared out into space for a few hours.</p>
+      <p>     During the aforementioned space of a few hours, Effri had polished the various coffee making implements, employed them in making coffee, cleaned the counters, stared at the clock for a c<span>u</span>mulative total of thirty-seven minutes, gone so far as to consider taking up knitting, and mentally started work on a hypothetical best selling novel. Despite keeping her from relying on omelettes for sustenance, a slow day at a coffee shop was like none other.</p>
+      <p>     Normally, there were a number of customers circulating through. But today, even the poets eventually got up and left. So Effri was reduced to staring at the coffee maker, hoping the lights on it would blink. Which, at long last, they did. Blink, pause, blink, blink, blink, pause... &quot;About time,&quot; she muttered, making a note on her time sheet, and hurrying out the door.</p>
+      <p>     The Usul adroitly navigated the crowds, not feeling too guilty if she bumped into anybody. After all, they hadn't stopped in for some coffee. The number of people dwindled away as she continued, taking a number of winding turns and eventually reaching a dead end, with lichen growing across the rock. She pulled away the screen of fake moss, and ducked inside. Several minutes later, she emerged, now outfitted in the blue and white outfit of Über Usul, ice crystals laced throughout her fur.</p>
+      <p>&quot;There's irony for you. By night, I fight evil. By day, I work at its coffee shop.&quot; And so saying, Über Usul set out to vanquish crime.</p>
+      <p align="-blocked-">     Shortly thereafter...</p>
+      <p>&quot;Setting out... to vanquish... crime,&quot; she managed to say as she hauled one hand over another, scaling the sheer rock face, &quot;would be a lot... nicer if setting out... were easier.&quot; The Defenders of Neopia was very careful about who had access to their high-security lower levels. Consequently, she was forced to climb a large subterranean cliff just to get to work. The fact that her uncanny ability allowed her to form hand holds out of ice only helped alleviate her annoyance a little.</p>
+      <p>     Of course, there were positive aspects to the work. It was good exercise. Unpleasant things happened to heroes who started relying too much on their ability to defy physics and didn't keep in shape. Throwing fireb<span>a</span>lls was all fine and dandy until it started to rain. Then a good solid punch from the villain at large was all it took to settle the matter.</p>
+      <p>     With a final surge of, if not energy, lower levels of entropy, the cryogenic crusader managed to pull onto a ledge on which a small, inconspicuous door the same color as the surrounding rock was all that indicated the bastion of justice concealed behind. Well, that, and a recently repainted warning in bright red letters, &quot;Do not enter, superheroes and janitorial staff only.&quot;</p>
+      <p>     Rolling her eyes, she stepped through. &quot;Most advanced technology outside of Virtupets is in this place, and they can't manage a simple elevator. Naturally.&quot; The corridors were a spotless white, with the notable exception of the scorch marks the janitors had not gotten too yet, so it was by memory that she reached the control room, which housed the massive quantities of buttons, dials, and screens needed to keep the DoN headquarters running smoothly.</p>
+      <p>Getting better at the climb, I see. You're earlier than I expected.&quot; The voice emanated from a large comfortable chair, which swiveled around to reveal Lightning Lenny slumped in it.</p>
+      <p>&quot;Oh not you too,&quot; Über Usul groaned. It seemed everybody was out to get her for arriving sooner than absolutely necessary.</p>
+      <p>&quot;What, what'd I say? And I saw your ad. Isn't that a tad beneath you?&quot; the Lenny asked curiously.</p>
+      <p>&quot;Never mind. Nothing. I had to do the ad. How else am I supposed to afford any sort of secret lair? Slinging coffee doesn't exactly bring in that kind of money. Anyways, what's the scoop?&quot;</p>
+      <p>&quot;Triple, mint with fudge, if it isn't too much trouble.&quot; Effri glared at him. &quot;Oh, I forgot. No ice cream jokes.&quot;</p>
+      <p>&quot;Sure, you forgot. And I'm going to move somewhere nice and warm like the Lost Desert when I retire. Anyways, you're the one always berating me for being slow about things. So?&quot;</p>
+      <p>&quot;Oh, all right. Somebody's causing quite a ruckus over at the Auction House. Noisy fellow.&quot;</p>
+      <p>&quot;And the Chia Cops aren't handling this because...?&quot;</p>
+      <p>&quot;Quite frankly, their fluffy earmuffs aren't cutting it. They've been doing the best, to be sure, but the situation's only barely been contained thus far. The genie's locked himself up in his lamp, what with all the commotion. We're holding you over until they...&quot;</p>
+      <p>     Lightning Lenny was interrupted as a transmission came in over one of the speakers. It was hazy, and the words 'send in back up' were barely distinguishable over a loud, off-key wailing noise.</p>
+      <p>&quot;... request backup,&quot; he finished lamely as the transmission cut out. &quot;You're in. And for a bit of advice, it would seem that keeping your ears plugged wouldn't go amiss.&quot;</p>
+      <p align="-blocked-">     At the scene of the crime...</p>
+      <p>     The Chia Cops had been forced to move out, following the civilians in retreat. Outside, they kept the curious as well as reporters from both Neovision and Neopian Times from entering. As Über Usul walked down the brightly lit halls, only the lack of people and occasionally a gap where an item that had racked up a considerable bid had been indicated that anything was amiss. Every minute or two, a loud, sourceless thud would echo through, a warning shot across the bows. &quot;Come out, come out, wherever you are,&quot; she called back. Who on Neopia could empty the entire Auction House just like that? Even now, they would be strolling through, taking their pick of priceless items.&quot;</p>
+      <p>     She hurried on, then stopped as she caught another sound between the resonating booms. Something scraping along the floor. Moving stealthily, she rounded the corner to see a grey Wocky. He had on a set of headphones emblazoned with the Virtupets brand logo, and wore a bandolier filled with spare batteries. His ears twitched in time to some beat she could not hear, but nevertheless, he still caught her quiet movements. He looked up, and smiled. &quot;Ah, I figured one of you would be in here soon enough. I'm flattered. No threat to anybody, apart from hearing, perhaps, and I have the Defenders after me over a few million neopoints.&quot;</p>
+      <p>     Ice began to form in Über Usul's hands. &quot;You know, you really do talk too much. I'm surprised you haven't bored me with the details of whatever preposterous name you've come up with for yourself.&quot;</p>
+      <p>     The Wocky smiled broadly. &quot;What can I say? I like noise. And if you must know, my name's Cisc. Didn't bother with a silly alter ego. I don't intend to go out in public dressed like it's a costume party.&quot; Here he gave a meaningful glance at her outfit. &quot;And as the Chia Cops would have little trouble looking me up on the police database, there isn't any point in pretending.&quot;</p>
+      <p>     The Usul blinked. This was a decided first. Most villains started by trying to k<span>i</span>ll her. &quot;I'm warning you...&quot;</p>
+      <p>&quot;Oh, do get on with it. I could tell you resistance is futile, but you'd never believe me,&quot; Cisc interrupted irritably. To make his point, he grabbed a dark nova, whirled, and flung it at her.</p>
+      <p>     Finally, familiar ground. She ducked easily, little troubled by the poor throw. In return, she flung a pair of her signature snow flake throwing stars, made up of razor sharp ice formed in her palms. &quot;That the best you've got?&quot; she challenged.</p>
+      <p>     Cisc didn't open his mouth. He simply started tapping his foot, as if counting off a beat. A high pitched whine at the edge of hearing filled the room for a second, emanating from the air itself, and the throwing stars exploded half way through their flight. &quot;Should have paid more attention in Neoschool. Ice, when vibrated at a resonant frequency, shatters. Music to my ears.&quot;</p>
+      <p>     That was decidedly unpleasant. Perhaps a more conventional approach. &quot;Well, I appreciate music myself. I'll see if I can't get you a few bars. Then you can whistle tunes with all the other jail birds.&quot; As she said this, she took a run towards him.</p>
+      <p>&quot;I'm not sure I appreciate your tone. Try this one,&quot; Cisc retorted, and before the hero managed more than a few steps, another noise reverberated through the room. This one was most definitely audible, loud enough that she was forced to her knees as her head rang in pain. The Wocky smiled, turning to glance over the contents of the nearest table. &quot;You care to believe me now? Nobody takes anybody's word these days. Pity, that. It'd save so much trouble.&quot; Despite the fact that his voice slid through the cacophony as if it wasn't there, Über Usul could hardly concentrate on it, the pressure of the noise was so great. Covering her ears did nothing to alleviate the matter. &quot;Just nod if you want it all to stop. You leave me alone, and worry about other villains out there. Oh, and don't even bother thinking about that trick you tried on Nihil. Even if you do set off the sprinklers, I can break out of anything you freeze me in in an instant.&quot;</p>
+      <p>     She couldn't help it. Her head was pounding, incapable of forming any thought at all, other than &quot;stop.&quot; She nodded.</p>
+      <p>     Instantly, the noise ceased. The Wocky grinned triumphantly. &quot;Try anything, and I don't go so easy on you.&quot; He gestured towards the door, watching her intently. It was a checkmate. She was forced to walk towards that door, knowing that her opponent would get away with millions of neopoints worth of items. The consciousness of this fact showed on her face, which seemed to amuse Cisc to no end.</p>
+      <p>     It kept showing, right up until she'd stepped through the door and to the side. She had to move fast. He'd been right. Sprinklers wouldn't work. But there was something else that would. There was a pillar that would work perfectly. She quickly ran over to it, scaling it smoothly with the aid of self-made handholds once again. &quot;I hate it when HQ is right about exercise,&quot; she muttered. Upon reaching the top, she pressed one palm against the ceiling, waiting. After about a minute, Cisc strolled in to look around and make sure she was gone before continuing to plunder the various goods.</p>
+      <p>     As soon as he was back in, Über Usul let the ice flow quickly from her hand. It crept along the ceiling, traveling down to the door frame and back up on the other side. Over there, it didn't simply grow outwards. It grew down, forming oversized icicles suspended precariously. She continued this for as long as she dared- it would be ruined if he moved on- before sliding down the pillar just far enough to peer through the still-open door. Perfect. He was directly under the trap. She slid down the rest of the way, and started towards the door while forming a thick shield of ice around her arm. The icicles could fall on anybody, after all.</p>
+      <p>     The villain looked up in time to catch her sneaking into the room. &quot;Quiet, or they fall,&quot; she warned, pointing upwards. &quot;You try to run away, and I shout. Bring them all down,&quot; she added, holding the shield above her head to show she'd fare a lot better. All the while, she continued forward.</p>
+      <p>&quot;Fine,&quot; Cisc spat back, still cautious enough to keep his voice down. &quot;Bravo. No loud noises. Very clever of you.&quot; There was no way he could shatter them all in the time it would take them to fall. &quot;But I've got a card up my sleeve yet,&quot; he said, and suddenly reached into the bag, hefting out a portable kiln. &quot;Fight ice with fire.</p>
+      <p>     For a second, Über Usul blanched. The portable kiln was second to no other weapon in terms of consistent attack with fire. The Wocky was twirling it, advancing towards her steadily. Only one thing for it... She charged at him, her thick ice shield held out in front. Cisc just smiled, leveling the kiln and letting out gouts of fire from it. &quot;As I said, you should've paid more attention in Neoschool. Even a first year knows fire melts...&quot; That was as far as he got before a solid punch from the blue clad champion knocked him unconscious.</p>
+      <p>&quot;That's what you get for not exercising. Honestly, villains can never take a decent punch when their power's down,&quot; she muttered, sighing and slumping to the floor in relief. &quot;And you're wrong,&quot; she addressed him coolly. &quot;I did pay attention. Water, and consequently ice, is a poor conductor of heat. It takes time to melt all the way through.&quot; Admittedly, it didn't hurt that kilns took quite a while to get started. You were supposed to prep it before a battle.</p>
+      <p align="-blocked-">     Afterwards...</p>
+      <p>     With Cisc locked away in a sound proof cell and the stolen goods restored to their proper owners, things gradually settled back to normal. At the Coffee Shoppe, Effri smiled, right in the middle of a stern lecture from Ms. Arca. Normal. As if.</p>
+      <p><strong>The End</strong></p>
+    </td>
+  </tr></table>
+</div>
+<div id="section--art-gallery" style="position: absolute; left: 85px; top: 10043px;">
+  <p>Art Gallery</p>
+  <table border="0" cellspacing="11" align="center">
+    <tr>
+      <td><a href="#p1"><img src="http://i82.photobucket.com/albums/j279/qazfan/1.png" height="50" width="50" border="1"></a></td>
+      <td><a href="#p2"><img src="http://i82.photobucket.com/albums/j279/qazfan/EffriHead.jpg" height="50" width="50" border="1"></a></td>
+      <td><a href="#p3"><img src="http://i82.photobucket.com/albums/j279/qazfan/Effriversion4.jpg" height="50" width="50" border="1"></a></td>
+      <td><a href="#p4"><img src="http://i82.photobucket.com/albums/j279/qazfan/eff.gif" height="50" width="50" border="1"></a></td>
+    </tr>
+    <tr>
+      <td><a href="#p5"><img src="http://i82.photobucket.com/albums/j279/qazfan/ClayUsul.jpg" height="50" width="50" border="1"></a></td>
+      <td><a href="#p6"><img src="http://i82.photobucket.com/albums/j279/qazfan/ByVhox.png" height="50" width="50" border="1"></a></td>
+      <td><a href="#p7"><img src="http://i82.photobucket.com/albums/j279/qazfan/uberusulbycharybdis7.png" height="50" width="50" border="1"></a></td>
+      <td><a href="#p8"><img src="http://i82.photobucket.com/albums/j279/qazfan/EffriByChaos_Lavawolf.jpg" height="50" width="50" border="1"></a></td>
+    </tr>
+  </table>
+  <p style="margin:30px;margin-top:1em;">Choose a link from above, then use the arrow tabs to navigate or the home tab to return to this page.</p>
+</div>
+<div id="section--action-figures" style="position: absolute; left: 129px; top: 12048px;">
+  <p>Action Figures</p>
+  <div align="center">
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="90" width="139" style="background: url('http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulice.png');"><p><img src="http://cgi.boingdragon.com/count/Rikuphan/2.gif" height="90" width="139"></p></td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    <a href="http://neopets.com/~Veruka_FyreFly"><img src="https://raw.githubusercontent.com/qazfan/effri/master/assets/teera_misu_ice_map.gif" border="0"></a>
+    <a href="http://petpages.neopets.com/~kushruneid"><img src="http://i4.photobucket.com/albums/y105/kushruneid/iceblock.gif" border="0" alt="Keep--in-a--cool--place.----Do--NOT--lick-!"></a>
+    <a href="http://www.neopets.com/~Myrmaid"><img src="https://raw.githubusercontent.com/qazfan/effri/master/assets/raichu_288_iUsul.png" alt="adopt" border="0"></a>
+    <a href="http://www.neopets.com/~marristia"><img src="http://i32.photobucket.com/albums/d15/marristia/adopt/ice.gif" border="0"></a>
+    <a href="http://www.neopets.com/~uleesia"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/iceusul.png" border="0"></a></p>
+  </p>
+  <p align="center">
+    <a href="http://www.neopets.com/~Elleanora"><img src="http://i82.photobucket.com/albums/j279/qazfan/Usuls/ice.png" border="0" height="117" width="75"></a>
+    <a href="http://www.neopets.com/~cal_#licence"><img src="http://i37.photobucket.com/albums/e87/neesboy/UberUsulLicence.png" alt="hero's licence" border="0"></a>
+    <a href="http://www.neopets.com/~Naralka"><img src="https://raw.githubusercontent.com/qazfan/effri/master/assets/HubbardLouise5IceUsulAdoptable.png" width="121" height="170" border="0"></a>
+    <a href="http://www.neopets.com/~Spaziful"><img src="http://i82.photobucket.com/albums/j279/qazfan/shoelaces/Shoelaces0018.png" border="0"></a>
+  </p>
+  <p align="center"></p>
+</div>
+<div id="section--adoptables" style="position: absolute; left: 94px; top: 14045px; overflow: auto;">
+  <p>Adopt an Usul! </p>
+  <p class="center"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulice.png" alt="By Qazfan" border="0"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsil.png" alt="By Qazfan" border="0"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPlu.png" alt="By Qazfan" border="0"></p>
 
-          <table width="537" border="0" cellpadding="5" cellspacing="0" id="adopts"><tr>
-            <td width="60">
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBab.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBab.png"></a></textarea> Baby<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBlu.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBlu.png"></a></textarea> Blue<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBro.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBro.png"></a></textarea> Brown<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulcam.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulcam.png"></a></textarea> Camo<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulcho.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulcho.png"></a></textarea> Chocolate<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulChr.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulChr.png"></a></textarea> Christmas<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulClo.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulClo.png"></a></textarea> Cloud<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulDar.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulDar.png"></a></textarea> Darigan<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulDes.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulDes.png"></a></textarea> Desert<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulele.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulele.png"></a></textarea> Electric<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulFae.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulFae.png"></a></textarea> Faerie<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulFir.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulFir.png"></a></textarea> Fire<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulgho.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulgho.png"></a></textarea> Ghost<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGol.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGol.png"></a></textarea> Gold<br>
-            </td>
-            <td width="60">
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGre.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGre.png"></a></textarea> Green<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGrey.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGrey.png"></a></textarea> Grey<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulHal.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulHal.png"></a></textarea> Halloween<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulice.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulice.png"></a></textarea> Ice<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulIsl.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulIsl.png"></a></textarea> Island<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulJel.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulJel.png"></a></textarea> Jelly<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulmut.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulmut.png"></a></textarea> Mutant<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulOra.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulOra.png"></a></textarea> Orange<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulpin.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulpin.png"></a></textarea> Pink<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPlu.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPlu.png"></a></textarea> Plushie<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPur.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPur.png"></a></textarea> Purple<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulrai.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulrai.png"></a></textarea> Rainbow<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRed.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRed.png"></a></textarea> Red<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRoyBoy.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRoyBoy.png"></a></textarea> Royal Boy<br>
-            </td>
-            <td width="60">
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRoyGir.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRoyGir.png"></a></textarea> Royal Girl<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsil.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsil.png"></a></textarea> Silver<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSku.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSku.png"></a></textarea> Skunk<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsno.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsno.png"></a></textarea> Snow<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSpe.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSpe.png"></a></textarea> Speckled<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulspo.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulspo.png"></a></textarea> Spotted<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSta.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSta.png"></a></textarea> Starry<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulstra.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulstra.png"></a></textarea> Strawberry<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulstri.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulstri.png"></a></textarea> Striped<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulTyr.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulTyr.png"></a></textarea> Tyrannian<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulUsuBoy.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulUsuBoy.png"></a></textarea> Usuki Boy<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulUsuGir.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulUsuGir.png"></a></textarea> Usuki Girl<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulwhi.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulwhi.png"></a></textarea> White<br>
-              <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulYel.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulYel.png"></a></textarea> Yellow<br>
-            </td>
-          </tr>
-        </table>
-        <p>More adoptables <a href="http://www.neopets.com/~Uleesia">here</a> and <a href="http://www.neopets.com/~Elleanora">here</a>.</p></div>
-        <div style="position: fixed; left: 176px; top: 627px;"></div>
+  <table width="537" border="0" cellpadding="5" cellspacing="0" id="adopts"><tr>
+    <td width="60">
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBab.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBab.png"></a></textarea> Baby<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBlu.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBlu.png"></a></textarea> Blue<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBro.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulBro.png"></a></textarea> Brown<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulcam.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulcam.png"></a></textarea> Camo<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulcho.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulcho.png"></a></textarea> Chocolate<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulChr.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulChr.png"></a></textarea> Christmas<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulClo.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulClo.png"></a></textarea> Cloud<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulDar.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulDar.png"></a></textarea> Darigan<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulDes.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulDes.png"></a></textarea> Desert<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulele.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulele.png"></a></textarea> Electric<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulFae.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulFae.png"></a></textarea> Faerie<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulFir.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulFir.png"></a></textarea> Fire<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulgho.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulgho.png"></a></textarea> Ghost<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGol.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGol.png"></a></textarea> Gold<br>
+    </td>
+    <td width="60">
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGre.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGre.png"></a></textarea> Green<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGrey.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulGrey.png"></a></textarea> Grey<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulHal.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulHal.png"></a></textarea> Halloween<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulice.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulice.png"></a></textarea> Ice<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulIsl.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulIsl.png"></a></textarea> Island<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulJel.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulJel.png"></a></textarea> Jelly<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulmut.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulmut.png"></a></textarea> Mutant<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulOra.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulOra.png"></a></textarea> Orange<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulpin.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulpin.png"></a></textarea> Pink<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPlu.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPlu.png"></a></textarea> Plushie<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPur.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulPur.png"></a></textarea> Purple<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulrai.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulrai.png"></a></textarea> Rainbow<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRed.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRed.png"></a></textarea> Red<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRoyBoy.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRoyBoy.png"></a></textarea> Royal Boy<br>
+    </td>
+    <td width="60">
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRoyGir.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulRoyGir.png"></a></textarea> Royal Girl<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsil.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsil.png"></a></textarea> Silver<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSku.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSku.png"></a></textarea> Skunk<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsno.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulsno.png"></a></textarea> Snow<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSpe.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSpe.png"></a></textarea> Speckled<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulspo.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulspo.png"></a></textarea> Spotted<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSta.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulSta.png"></a></textarea> Starry<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulstra.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulstra.png"></a></textarea> Strawberry<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulstri.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulstri.png"></a></textarea> Striped<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulTyr.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulTyr.png"></a></textarea> Tyrannian<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulUsuBoy.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulUsuBoy.png"></a></textarea> Usuki Boy<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulUsuGir.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulUsuGir.png"></a></textarea> Usuki Girl<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulwhi.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/Usulwhi.png"></a></textarea> White<br>
+      <img width=50 src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulYel.png"> <textarea><a href="http://www.neopets.com/~effri"><img src="http://i210.photobucket.com/albums/bb50/fuzzwudd/UsulYel.png"></a></textarea> Yellow<br>
+    </td>
+  </tr>
+</table>
+<p>More adoptables <a href="http://www.neopets.com/~Uleesia">here</a> and <a href="http://www.neopets.com/~Elleanora">here</a>.</p></div>
+<div style="position: fixed; left: 176px; top: 627px;"></div>
